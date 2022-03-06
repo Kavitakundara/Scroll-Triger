@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Scroll-Trigger</title>
+</head>
+<body>
+    <section>
+        <img src="images/bg.jpg" alt="bg" id="bg">
+        <h2 id="text">Mountains</h2>
+        <img src="images/clouds_1.png" alt="bg" id="clouds_1">
+        <img src="images/clouds_2.png" alt="bg" id="clouds_2">
+        <img src="images/man.png" alt="bg" id="man">
+        <img src="images/mountain_left.png" alt="bg" id="mountainl">
+        <img src="images/mountain_right.png" alt="bg" id="mountainr">
+    </section>
+    <div class="content">
+        <h2>Scroll Trigger</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab quia eaque quae! Sed quisquam, harum iste quibusdam ipsum nam pariatur ad eveniet necessitatibus eos vero obcaecati praesentium molestiae dolorem eaque itaque quaerat esse maxime, accusamus non excepturi. Nisi quae impedit commodi, ipsum nostrum, et dicta labore totam repellat sapiente libero iure quia blanditiis recusandae voluptates enim numquam officia! Ipsum repellat incidunt praesentium, alias quis et quaerat minima exercitationem! Modi quia, est iste accusamus illo unde sunt a ipsum minus esse voluptatibus veritatis, commodi nulla aliquam. Deserunt delectus impedit dicta. Ullam id mollitia delectus maxime. Nam fugit praesentium aperiam sunt consequuntur dolores neque adipisci ab, nostrum odio quam quas dignissimos, quaerat iste mollitia voluptatem ratione quod nesciunt velit rem corporis repellendus labore eos numquam. Mollitia magnam quae itaque perferendis eveniet dolor distinctio corrupti porro suscipit repellat est maiores natus corporis quisquam, tempore accusamus, odio iure fuga delectus odit! Optio vitae exercitationem officiis tempore nisi voluptates voluptas tenetur magni ab! Eveniet veniam sequi neque corrupti. Voluptatum mollitia excepturi itaque, aspernatur vero in hic, quo quod adipisci nostrum ex explicabo eum repellendus voluptatem? Placeat dolores aperiam reiciendis error voluptatum eligendi perspiciatis, quibusdam sed recusandae id consequuntur quidem porro saepe eveniet harum optio in.<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad commodi maiores eos quisquam, dolor nulla, nostrum quasi officiis rerum, maxime ipsum voluptas animi enim itaque harum magni fugit sint aspernatur debitis possimus aut. Dolorum veniam alias consequatur inventore ipsa impedit praesentium accusamus. Quis sapiente, explicabo fuga cum maiores impedit enim excepturi atque quod! Tenetur officiis molestias esse numquam sit beatae, delectus hic est blanditiis nostrum ad sed consequuntur quas soluta deleniti eveniet cum nihil animi eos illum quia vitae nulla atque? Ea vero esse unde soluta consectetur id, ipsam necessitatibus laudantium nobis facilis hic dolores repellendus vel dignissimos doloremque tenetur sit dicta quibusdam nemo adipisci magnam. Quos ratione explicabo porro ipsum fugit a ullam vel cumque soluta excepturi hic sequi id molestias, temporibus pariatur iste modi possimus quod dolorem doloribus repellendus? Vero veniam temporibus dolores pariatur, mollitia quasi laboriosam. Dolorem saepe id numquam nemo culpa placeat repellat ut. Facilis ullam laborum suscipit. Eum aliquam quas possimus a minus maiores nihil earum in nostrum maxime harum aut fugit, accusantium architecto quo modi commodi. Cumque odio, nisi perspiciatis eos quaerat laborum obcaecati ea distinctio porro in voluptates! A quasi nostrum harum, incidunt, dolore eaque non expedita asperiores exercitationem error pariatur debitis id.
+        </p>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<script>
+    gsap.to("#bg",{
+        scrollTrigger:{
+            scrub:1
+        },
+        scale:1.5
+    })
+
+    gsap.to("#man",{
+        scrollTrigger:{
+            scrub:1
+        },
+        scale:0.5
+    })
+    gsap.to("#mountainl",{
+        scrollTrigger:{
+            scrub:1
+        },
+        x: -500
+    })
+    gsap.to("#mountainr",{
+        scrollTrigger:{
+            scrub:1
+        },
+        x: 500
+    })
+
+    gsap.to("#clouds_1",{
+        scrollTrigger:{
+            scrub:1
+        },
+        x: 200
+    })
+
+    gsap.to("#clouds_2",{
+        scrollTrigger:{
+            scrub:1
+        },
+        x: -200
+    })
+
+    gsap.to("#text",{
+        scrollTrigger:{
+            scrub:1
+        },
+        y: 500
+    })
+</script>
+</html>
